@@ -1,0 +1,27 @@
+{
+  "name": "livinglots.emailparticipants",
+  "version": "0.1.0",
+  "description": "Front end code for Living Lots. Email participants interface.",
+  "main": "src/index.js",
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "leaflet": "~0.7.3",
+    "spin.js": "~2.0.1",
+    "underscore": "~1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/596acres/livinglots.emailparticipants.git"
+  },
+  "author": "Eric Brelsford",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/596acres/livinglots.emailparticipants/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-handlebars": "^0.9.0",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}
