@@ -1,6 +1,6 @@
 {
   "name": "livinglots.emailparticipants",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Front end code for Living Lots. Email participants interface.",
   "main": "src/index.js",
   "dependencies": {
