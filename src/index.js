@@ -41,7 +41,7 @@ L.Map.include({
 
     sendMail: function () {
         var map = this,
-            params = this.getParamsQueryString({
+            params = this.getParamsQueryString({}, {
                 bbox: this.getBounds().toBBoxString(),
                 subject: $(formSelector).find(':input[name=subject]').val(),
                 text: $(formSelector).find(':input[name=text]').val()
@@ -68,7 +68,7 @@ L.Map.include({
 
     updateMailWindow: function () {
         var map = this,
-            params = this.getParamsQueryString({
+            params = this.getParamsQueryString({}, {
                 bbox: this.getBounds().toBBoxString()
             });
 
@@ -106,6 +106,9 @@ L.Map.include({
                 map.updateMailWindow();
             },
             'zoomend': function () {
+                map.updateMailWindow();
+            },
+            'filterschanged': function () {
                 map.updateMailWindow();
             }
         });
