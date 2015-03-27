@@ -10,6 +10,11 @@ var $parent,
     submitButtonSelector = '.mail-mode-submit',
     formSelector = '.mail-mode-form';
 
+// Watch out for IE 8
+var console = window.console || {
+    info: function () {}
+};
+
 function getDjangoUrl(name) {
     try {
         return Django.url(name);
